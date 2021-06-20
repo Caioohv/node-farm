@@ -1,27 +1,9 @@
+// Core
 const fs = require('fs'); // File System
 const http = require('http'); // HTTP to link site
 const url = require('url'); // To get URL properties
 
-const replaceTemplate = (temp, product) => {
-    // It will change every occurrence of these tags by setting it value
-    let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
-    output = output.replace(/{%IMAGE%}/g, product.image);
-    output = output.replace(/{%PRICE%}/g, product.price);
-    output = output.replace(/{%FROM%}/g, product.from);
-    output = output.replace(/{%NUTRIENTS%}/g, product.nutrients);
-    output = output.replace(/{%QUANTITY%}/g, product.quantity);
-    output = output.replace(/{%DESCRIPTION%}/g, product.description);
-    output = output.replace(/{%ID%}/g, product.id);
-    output = output.replace(/{%IMAGE%}/g, product.image);
-
-    if(!product.organic){
-        output = output = output.replace(/{%NOT_ORGANIC%}/g, 'not-organic');
-    }else{
-        output = output = output.replace(/{%NOT_ORGANIC%}/g, '');
-    }
-    
-    return output;
-}
+const replaceTemplate = require('./modules/replaceTemplate');
 
 
 
