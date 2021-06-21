@@ -3,7 +3,7 @@ const fs = require('fs'); // File System
 const http = require('http'); // HTTP to link site
 const url = require('url'); // To get URL properties
 
-const replaceTemplate = require('./modules/replaceTemplate');
+const replaceTemplate =  require('./modules/replaceTemplate');
 
 
 

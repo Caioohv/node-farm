@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Caioohv/node-farm/issues"
   },
-  "homepage": "https://github.com/Caioohv/node-farm#readme"
+  "homepage": "https://github.com/Caioohv/node-farm#readme",
+  "dependencies": {
+    "slugify": "^1.5.3"
+  }
 }
